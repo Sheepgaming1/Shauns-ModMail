@@ -20,7 +20,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 			<img src="${msg.author.avatarURL}" style="float: left; width: 30px; height: 30px; border-radius: 50%;">
 		</div>
 		<div style="padding-left: 15px">
-			<h3 class="${msg.type}">${msg.author.username}#${msg.author.discriminator} - ${msg.type}</h3> <p style="color:grey"> <i>${msg.timestamp} </i> </p>
+			<h3 class="${msg.type}">${msg.author.username} - ${msg.type}</h3> <p style="color:grey"> <i>${msg.timestamp} </i> </p>
 			<p class="content-text">${msg.content}</p>
 			${msg.originalContent ? `<br><p class="content-text" style=font-weight:"bold"><b>Original Content: </b>  ${msg.originalContent}</p>` : ''}
 			${msg.attachments && msg.attachments.length > 0 ? `
@@ -181,19 +181,19 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         </div>
 
         <div class="topnav-links">
-            <a href="https://shop.shaunsdiscordbots.co.uk/package/5853912">Purchase Bot</a>
-            <a href="https://discord.gg/zgHrChUBPc">Discord Server</a>
+            <a href="https://portal.armour-hosting.com/index.php?rp=/store/discord-bots">Purchase Bot</a>
+            <a href="https://discord.gg/armour">Discord Server</a>
         </div>
 	
         <div class="topnav-img">
-	<img src="https://media.discordapp.net/attachments/1050900802711068792/1140020720123002960/logo.png?width=810&height=810" style="float: right; width: 63px; height: 63px">
+	<img src="https://media.discordapp.net/attachments/900929022312198166/1126516176764272761/discord.png?width=809&height=809" style="float: right; width: 63px; height: 63px">
         </div>
 
     </div>
     
     <div class="main">
     		<div>
-            <h2>Log from user ${data.recipient.username}#${data.recipient.discriminator}</h2>
+            <h2>Log from user ${data.recipient.username}</h2>
             ${data.note ? `<p class="content-text">Note: ${data.note}</p>` : ''}
             <hr>
         </div>
